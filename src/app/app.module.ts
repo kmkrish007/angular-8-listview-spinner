@@ -2,20 +2,12 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 import { ReactiveFormsModule } from "@angular/forms";
-
 import { AppComponent } from "./app.component";
-import { TopBarComponent } from "./top-bar/top-bar.component";
-import { ProductListComponent } from "./product-list/product-list.component";
 import { ListViewModule } from "@syncfusion/ej2-angular-lists";
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    ReactiveFormsModule,
-    ListViewModule,
-    RouterModule.forRoot([{ path: "", component: ProductListComponent }])
-  ],
-  declarations: [AppComponent, TopBarComponent, ProductListComponent],
+  imports: [BrowserModule, ReactiveFormsModule, ListViewModule],
+  declarations: [AppComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
