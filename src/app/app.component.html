@@ -1,0 +1,13 @@
+<ejs-listview
+  id="element"
+  #list
+  [dataSource]="dataSource"
+  [width]="300"
+  [query]="query"
+  [fields]="fields"
+  [showHeader]="true"
+  [headerTitle]="headertitle"
+  (actionComplete)="onActionComplete($event)"
+>
+</ejs-listview>
+<div #spinner id="spinner"></div>
